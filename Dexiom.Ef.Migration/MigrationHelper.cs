@@ -4,7 +4,7 @@ using System.Data.Entity.Migrations;
 
 namespace Dexiom.Ef.Migration
 {
-    public static class MigrationHelper<TContext, TMigrationConfiguration>
+    public class MigrationHelper<TContext, TMigrationConfiguration>
         where TContext : DbContext
         where TMigrationConfiguration : DbMigrationsConfiguration<TContext>, new()
     {
