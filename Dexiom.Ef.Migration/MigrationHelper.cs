@@ -8,7 +8,7 @@ namespace Dexiom.Ef.Migration
         where TContext : DbContext
         where TMigrationConfiguration : DbMigrationsConfiguration<TContext>, new()
     {
-        public static void ConfigureInitializer(MigrationType migrationType)
+        public void ConfigureInitializer(MigrationType migrationType)
         {
             switch (migrationType)
             {
